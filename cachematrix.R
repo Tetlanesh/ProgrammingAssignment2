@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
   
   data <- x$get()                                   #this is only executed if previous condition was FALSE (im is NULL). We are getting original matrix from cache
   im <- solve(data, ...)                            #im get the value of inverted(data) - its a function for inverted matrix
-  x$setinverse(im)                                   #store the result of invertion in chache
+  x$setinverse(im)                                  #store the result of invertion in chache
   im                                                #returns inverted matrix as result of the function
 }
 
